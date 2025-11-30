@@ -43,12 +43,12 @@ main ul li {
     background-color: #ffffff;
 }
 
-/* LOGOS E ICONOS */
+/* LOGOS ICONOS */
 
 .buttons-icons {
-    width: 70px; /* Reducido para que no sea tan grande */
+    width: 70px;
     height: 70px;
-    margin-bottom: 5px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 5px;
     display: block;
     max-width: 100%;
     height: auto;
@@ -57,7 +57,7 @@ main ul li {
 /* TEXTO DEL BOTÓn*/
 .navegadores-texto {
     color: black;
-    /* font-size: 1rem; (Puedes añadir un tamaño de fuente aquí si es necesario) */
+
 }
 
 /* Efecto hover */
@@ -97,5 +97,5 @@ main ul li {
 }
 */
 main ul li:last-child {
-    margin-right: 0; /* Eliminar el margen derecho del último elemento */
+    margin-right: 0;
 }
