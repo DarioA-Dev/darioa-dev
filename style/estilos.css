@@ -1,0 +1,103 @@
+body {
+            color: rgb(0, 0, 0);
+            padding: 0; /* quitar espacios alrededor para pegar la tira a los márgenes */
+            text-align: center;
+            margin: 0;
+        }
+        header {
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 11px;
+        }
+        nav ul li a.boton-enlace, nav ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px 2px;
+            background-color: #6d0000;
+            color: #f8dddd;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: 'Orbitron', Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            cursor: pointer;
+        }
+
+        nav ul li a.boton-enlace:hover, nav ul li a:hover {
+            background-color: #535353;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        h1 {
+            font-family: 'Orbitron', Arial, sans-serif;
+        }
+
+
+        .superior {
+            background-color: #a7a7a7;
+            color: #000000;
+            font-family: 'Orbitron', Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .boton-juegos {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px 2px;
+            background-color: #bcad00;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: 'Orbitron', Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            cursor: pointer;
+            align-items: right;
+            justify-content: right;
+            text-align: center;
+        }
+
+        .boton-navegadores {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px 2px;
+            background-color: #006db3;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: 'Orbitron', Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            cursor: pointer;
+        }
