@@ -1,0 +1,30 @@
+body {
+	color: rgb(227, 227, 227);
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+/*
+TIPOGRAFÍA
+*/
+title {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+/* HEADER */
+
+.head {
+    font-size: 30px;
+	display: inline-flex;
+	align-items: center; /* Centrado vertical entre H1 y el logo */
+	gap: 5vw;
+    font-family: 'Titillium Web', sans-serif;
+    color: black
+}
+.nexo-logo {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    float: none;
+}
