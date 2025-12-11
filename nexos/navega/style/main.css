@@ -72,7 +72,7 @@ a.boton-enlace {
 
 }
 
-a.boton-enlace.wide {
+a.boton-enlace {
     min-width: 200px; 
 }
 
@@ -87,11 +87,11 @@ a.boton-enlace:hover {
 
 /* ESTILOS PARA LA NAVEGACIÓN INFERIOR Y PIE DE PÁGINA */
 .bottom-navigation {
-    margin-top: 60px; /* Espacio significativo debajo de los navegadores */
+    margin-top: 60px; /* Espacio debajo de los navegadores */
 }
 
 .bottom-navigation h2 {
-    font-family: 'Montserrat', Arial, sans-serif; /* Texto claro y legible */
+    font-family: 'Montserrat', Arial, sans-serif;
     font-size: 1.5rem;
     color: #333333;
     margin-bottom: 25px;
@@ -100,30 +100,22 @@ a.boton-enlace:hover {
 .other-sections {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Espacio entre los botones pequeños */
+    gap: 15px;
     flex-wrap: wrap;
 }
 
 /* Ajuste para botones más pequeños en esta sección */
 .boton-enlace.small {
-    padding: 12px 18px; /* Menor padding */
-    min-width: 120px; /* Menor ancho */
-    font-size: 0.9rem; /* Fuente más pequeña */
+    padding: 12px 18px; 
+    min-width: 120px;
+    font-size: 0.9rem; 
 }
 
 .footer-text {
-    margin-top: 120px; /* Mucho espacio hasta el pie de página */
-    padding: 20px;
+    margin-top: 100px;
+    padding-top: 20px;
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 0.9rem;
     color: #666666;
-    border-top: 1px solid #EEEEEE; /* Separador sutil */
-}
-
-.footer-img {
-    padding: 0px;
-    margin: 0px;
-    width: 100vw;
-    height: auto;
-    margin-top: 10px;
+    border-top: 1px solid #EEEEEE;
 }
