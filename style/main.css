@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: #F8F8FF;
+	color: rgb(0, 0, 0);
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+/*TIPOGRAFÍA*/
+
+title {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+/* HEADER */
+
+.head {
+    font-size: 30px;
+	display: inline-flex;
+	align-items: center; /* Centrado vertical entre H1 y el logo */
+	gap: 2vw;
+    font-family: 'Titillium Web', sans-serif;
+    color: black
+}
+.nexo-logo {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    float: none;
+}
+
+.introduction {
+    font-family: 'Montserrat', sans-serif;
+	color: black;
+	margin: 20px;
+}
+
+.aside-img {
+    width: 400px;
+    height: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0px;
+    pointer-events: none; /* decorativa, no interfiere con clicks */
+    z-index: -1; /* detrás del contenido */
+}
