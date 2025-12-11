@@ -20,7 +20,7 @@ h1 {
     font-family: 'Archivo Black', sans-serif;
     margin: 0 0 20px 0;
     font-size: 50px;
-    color: #006db3;
+    color: #4f2ab3;
     border-bottom: 2px solid #E0E0E0;
     padding-bottom: 10px;
     display: inline-block;
@@ -78,11 +78,11 @@ a.boton-enlace {
 
 /*ESTILOS DE HOVER (Color Sólido)*/
 a.boton-enlace:hover {
-    background-color: #006db3;
+    background-color: #4f2ab3;
     text-shadow: none;
     box-shadow: 0 6px 15px rgba(0,0,0,0.4);
     opacity: 0.95;
-    color:#d3eeff
+    color:#e9d3ff
 }   
 
 /* ESTILOS PARA LA NAVEGACIÓN INFERIOR Y PIE DE PÁGINA */
