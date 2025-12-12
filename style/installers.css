@@ -2,7 +2,14 @@
     box-sizing: border-box; 
 }
 
-/*BODY Y ENCABEZADOS*/
+/* UTILIDADES */
+.flex-group {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+
+/* BODY Y ENCABEZADOS */
 body {
     font-family: 'Montserrat', Arial, sans-serif;
     background-color: #F8F8FF;
@@ -18,8 +25,8 @@ header {
 
 h1 {
     font-family: 'Archivo Black', sans-serif;
-    margin: 12vh 0 5vh 0;   
-    font-size: 100px;
+    margin: 10vh 0 3vh 0;    
+    font-size: 70px;
     color: #4f2ab3;
     border-bottom: 2px solid #E0E0E0;
     width: 60vw;
@@ -30,15 +37,15 @@ h1 {
 
 .h2-size {
     margin-top: 2vh;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .p-h2-size {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 4vh;
 }
 
-/*NAVEGACIÓN Y LISTAS*/
+/* NAVEGACIÓN Y LISTAS */
 nav {
     display: flex;
     flex-direction: column;
@@ -51,18 +58,45 @@ nav ul.main-list, ul.browser-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+    /* QUITADO: display: flex; y flex-wrap: wrap; */
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
 
-/*ESTILOS DE BOTÓN PRINCIPAL*/
+/* NAVEGACIÓN INFERIOR Y PIE DE PÁGINA */
+.bottom-navigation {
+    margin-top: 60px; /* Espacio debajo de los navegadores */
+}
+
+.bottom-navigation h2 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+.other-sections {
+    /* QUITADO: display: flex; y flex-wrap: wrap; */
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-text {
+    margin-top: 100px;
+    padding-top: 20px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #666666;
+    border-top: 1px solid #EEEEEE;
+}
+
+
+/* ESTILOS DE BOTÓN PRINCIPAL */
 a.boton-enlace {
     display: grid;
     
-    padding: 30px 35px;
+    padding: 20px 25px;
     min-width: auto;
     border-radius: 10px;
     border: 2px solid #000000;
@@ -72,14 +106,12 @@ a.boton-enlace {
     color: #111111;
     text-decoration: none;
     
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
 
     transition: all 0.3s ease-in-out;
     box-shadow: 0 3px 10px rgba(0,0,0,0.15);
     cursor: pointer;
-    
-
 }
 
 a.boton-enlace {
@@ -96,37 +128,9 @@ a.boton-enlace:hover {
     border: 2px solid #6830ff;
 }   
 
-/* ESTILOS PARA LA NAVEGACIÓN INFERIOR Y PIE DE PÁGINA */
-.bottom-navigation {
-    margin-top: 60px; /* Espacio debajo de los navegadores */
-}
-
-.bottom-navigation h2 {
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 1.5rem;
-    color: #333333;
-    margin-bottom: 25px;
-}
-
-.other-sections {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-/* Ajuste para botones más pequeños en esta sección */
+/* Ajuste para botones más pequeños */
 .boton-enlace.small {
     padding: 12px 18px; 
     min-width: 120px;
     font-size: 0.9rem; 
-}
-
-.footer-text {
-    margin-top: 100px;
-    padding-top: 20px;
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 0.9rem;
-    color: #666666;
-    border-top: 1px solid #EEEEEE;
 }
