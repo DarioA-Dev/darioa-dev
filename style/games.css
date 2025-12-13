@@ -94,6 +94,11 @@ ul.games-list li {
     margin-bottom: 25px;
 }
 
+.issue-repo {
+    margin-top: 10em;
+    color: rgb(165, 165, 165);
+    text-align: center;
+}
 
 /* Cosas generales (Otras) */
 
@@ -104,7 +109,7 @@ ul.games-list li {
 
 
 .footer-text {
-    margin-top: 100px;
+    margin-top: 10px;
     width: 100%; 
     margin-left: 0;
     margin-right: 0;

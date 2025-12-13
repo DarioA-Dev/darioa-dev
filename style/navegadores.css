@@ -38,6 +38,12 @@ h1 {
     margin-bottom: 4vh;
 }
 
+.issue-repo {
+    margin-top: 10em;
+    color: rgb(165, 165, 165);
+    text-align: center;
+}
+
 /*NAVEGACIÓN Y LISTAS*/
 nav {
     display: flex;
@@ -60,7 +66,7 @@ nav ul.main-list, ul.browser-list {
 
 /* ESTILOS PARA LA NAVEGACIÓN INFERIOR Y PIE DE PÁGINA */
 .bottom-navigation {
-    margin-top: 60px; /* Espacio debajo de los navegadores */
+    margin-top: 140px; /* Espacio debajo de los navegadores */
 }
 
 .other-sections {
@@ -74,7 +80,7 @@ nav ul.main-list, ul.browser-list {
 
 
 .footer-text {
-    margin-top: 100px;
+    margin-top: 10px;
     padding-top: 20px;
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 0.9rem;
