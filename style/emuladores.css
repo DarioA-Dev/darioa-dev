@@ -1,33 +1,33 @@
-/* ESTRUCTURA PRINCIPAL */
+/* estructura principal */
 .contenedor-doble {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: flex-start;
     gap: 40px;
     max-width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto;
     padding-bottom: 60px;
 }
 
-/* ESTILOS DE LAS COLUMNAS - UNIFICADOS */
+/* estilos de las columnas - unificados */
 .columna {
     flex: 1;
-    background-color: #f4f3ee; 
-    padding: 30px 80px 30px 80px;
+    background-color: #f4f3ee;
+    padding: 30px 80px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     border: 2px solid #000000;
 }
 
-/* SEPARADOR CENTRAL */
+/* separador central */
 .separador-vertical {
     width: 2px;
-    background-color: #E0E0E0;
+    background-color: #e0e0e0;
     align-self: stretch;
     border-radius: 2px;
 }
 
-/* TITULOS DE SECCION */
+/* titulos de seccion */
 .titulo-seccion {
     font-family: 'Archivo Black', sans-serif;
     text-align: center;
@@ -38,25 +38,30 @@
     text-transform: uppercase;
 }
 
-/* COLORES DE TITULOS */
-.izquierda .titulo-seccion { color: #bca916; }
-.derecha .titulo-seccion { color: #bca916; }
+/* colores de titulos */
+.izquierda .titulo-seccion {
+    color: #bca916;
+}
 
-/* CONTENEDOR DE LA LISTA DE BOTONES */
+.derecha .titulo-seccion {
+    color: #bca916;
+}
+
+/* contenedor de la lista de botones */
 .lista-botones {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* ESTILO DE LOS BOTONES BASE (Emuladores) */
+/* estilo de los botones base (emuladores) */
 a.boton-item {
     display: block;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     border: 2px solid #000000;
-    background-color: #E0E0E0;
+    background-color: #e0e0e0;
     color: #111111;
     text-decoration: none;
     font-size: 18px;
@@ -64,50 +69,49 @@ a.boton-item {
     transition: all 0.3s ease;
 }
 
-/* HOVER DE LOS BOTONES (COLUMNA EMULADORES) - ANIMACIÓN UNIFICADA */
+/* hover de los botones (columna emuladores) */
 a.boton-item:hover {
     background-color: #bca916;
     color: #fffdd3;
     border-color: #e1ad29;
-    
-    /* ANIMACIÓN Y SOMBRA UNIFICADAS */
     transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.3); 
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
 }
 
-/* --- ESTILOS DE DESPLEGABLES (ACORDEÓN) --- */
+/* estilos de desplegables (acordeon) */
 .seccion-desplegables {
     display: flex;
     flex-direction: column;
-    gap: 15px; 
+    gap: 15px;
 }
 
 .acordeon {
-    background-color: #f4f3ee; 
-    border: 2px solid #000000; 
+    background-color: #f4f3ee;
+    border: 2px solid #000000;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
 
 .acordeon-titulo {
-    display: block; 
+    display: block;
     padding: 20px;
-    background-color: #E0E0E0; 
+    background-color: #e0e0e0;
     color: #111111;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     cursor: pointer;
     border-radius: 8px;
     list-style: none;
-    transition: all 0.3s ease; /* Transición añadida para suavizar el hover */
+    transition: all 0.3s ease;
+    text-align: center;
 }
 
 .acordeon-titulo::-webkit-details-marker {
     display: none;
 }
 
-/* HOVER DEL TÍTULO DEL ACORDEÓN - UNIFICADO (sin animación de movimiento) */
+/* hover del titulo del acordeon */
 .acordeon-titulo:hover {
     background-color: #bca916;
     color: #fffdd3;
@@ -117,211 +121,65 @@ a.boton-item:hover {
     border-color: #e1ad29;
 }
 
+.acordeon[open] .acordeon-titulo {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 .acordeon-contenido {
     padding: 15px 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 10px;
 }
 
-/* Ajuste del botón para que encaje dentro del acordeón */
+/* botones dentro del acordeon */
 .acordeon-contenido .boton-juegos {
-    padding: 12px 15px; 
+    padding: 12px 15px;
     font-size: 16px;
     margin: 0;
     min-width: unset;
     transition: all 0.3s ease-in-out;
     border: 2px solid #000000;
-    background-color: #E0E0E0;
+    background-color: #e0e0e0;
     color: #111111;
     font-weight: 700;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
 }
 
-/* HOVER DE BOTONES INTERNOS DE ACORDEÓN - ANIMACIÓN UNIFICADA */
+/* imagen circular */
+img.game-icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #bca916;
+    background-color: #ffffff;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+
+/* hover botones internos */
 .acordeon-contenido .boton-juegos:hover {
     background-color: #bca916;
     color: #fffdd3;
     border-color: #e1ad29;
-    
-    /* ANIMACIÓN Y SOMBRA UNIFICADAS */
     transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
 }
 
-/* ESTRUCTURA PRINCIPAL */
-.contenedor-doble {
-    display: flex;
-    justify-content: center; 
-    align-items: flex-start;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto; 
-    padding-bottom: 60px;
-}
-
-/* ESTILOS DE LAS COLUMNAS */
-.columna {
-    flex: 1;
-    background-color: #f4f3ee; 
-    padding: 30px 80px 30px 80px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    border: 1px solid #000000;
-}
-
-/* SEPARADOR CENTRAL */
-.separador-vertical {
-    width: 2px;
-    background-color: #E0E0E0;
-    align-self: stretch;
-    border-radius: 2px;
-}
-
-/* TITULOS DE SECCION */
-.titulo-seccion {
-    font-family: 'Archivo Black', sans-serif;
-    text-align: center;
-    font-size: 35px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    color: #333;
-    text-transform: uppercase;
-}
-
-/* COLORES DE TITULOS */
-.izquierda .titulo-seccion { color: #bca916; }
-.derecha .titulo-seccion { color: #bca916; }
-
-/* CONTENEDOR DE LA LISTA DE BOTONES */
-.lista-botones {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-/* ESTILO DE LOS BOTONES BASE (Emuladores) */
-a.boton-item {
-    display: block;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid #000000;
-    background-color: #E0E0E0;
-    color: #111111;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 700;
-    transition: all 0.3s ease;
-}
-
-/* HOVER DE LOS BOTONES (COLUMNA EMULADORES) */
-a.boton-item:hover {
-    background-color: #bca916;
-    color: #fffdd3;
-    border-color: #e1ad29;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.3); 
-}
-
-/* --- ESTILOS DE DESPLEGABLES (ACORDEÓN) --- */
-.seccion-desplegables {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; 
-}
-
-.acordeon {
-    background-color: #f4f3ee; 
-    border: 2px solid #000000; 
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
-    transition: all 0.3s ease;
-}
-
-.acordeon-titulo {
-    display: block; 
-    padding: 20px;
-    background-color: #E0E0E0; 
-    color: #111111;
-    font-size: 20px;
-    font-weight: 700;
-    cursor: pointer;
-    border-radius: 8px;
-    list-style: none;
-    transition: all 0.3s ease;
-}
-
-.acordeon-titulo::-webkit-details-marker {
-    display: none;
-}
-
-/* HOVER DEL TÍTULO DEL ACORDEÓN */
-.acordeon-titulo:hover {
-    background-color: #bca916;
-    color: #fffdd3;
-}
-
-.acordeon[open] {
-    border-color: #e1ad29;
-}
-
-.acordeon-contenido {
-    padding: 15px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px; 
-}
-
-/* BASE PARA BOTONES DE JUEGOS CON ICONO */
-.acordeon-contenido a.boton-juegos {
-    padding: 12px 15px;
-    font-size: 16px; 
-    margin: 0; 
-    min-width: unset; 
-    text-align: left; /* Alineamos texto a la izquierda */
-    
-    /* Configuración Flexbox para alinear texto e icono */
-    display: flex; 
-    justify-content: space-between; /* Texto a la izquierda, Icono a la derecha */
-    align-items: center; /* Centrado vertical */
-
-    border: 2px solid #000000;
-    background-color: #E0E0E0;
-    color: #111111;
-    font-weight: 700;
-    border-radius: 10px;
-    
-    transition: all 0.3s ease-in-out;
-}
-
-/* ESTILO DE LA IMAGEN CIRCULAR (LA "BOLA") */
-img.game-icon {
-    height: 45px; 
-    width: 45px; 
-    border-radius: 50%;
-    object-fit: cover; 
-    border: 2px solid #bca916; 
-    background-color: #ffffff;
-    margin-left: 10px; 
-    flex-shrink: 0; 
-}
-
-/* HOVER DE BOTONES INTERNOS DE ACORDEÓN */
-.acordeon-contenido a.boton-juegos:hover {
-    background-color: #bca916;
-    color: #fffdd3;
-    border-color: #e1ad29;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.3);
-}
-
-/* RESPONSIVE MOVIL */
+/* responsive movil */
 @media (max-width: 768px) {
     .contenedor-doble {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .separador-vertical {
         display: none;
     }
@@ -330,22 +188,6 @@ img.game-icon {
         width: 100%;
         margin-bottom: 20px;
         padding: 20px;
-    }
-}
-
-/* RESPONSIVE MOVIL */
-@media (max-width: 768px) {
-    .contenedor-doble {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .separador-vertical {
-        display: none;
-    }
-
-    .columna {
-        width: 100%;
-        margin-bottom: 20px;
+        box-sizing: border-box;
     }
 }
